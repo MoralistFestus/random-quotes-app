@@ -16,7 +16,9 @@ let quotes=[
         let div=document.querySelector('#quote');
         let quote=`<div class="card">
        <img src="icon/icon.png">
-       <p>${quotes[index]}</p>
+
+       <span class="tooltiptext" onclick="copyToClipboard('p1')"  onmouseout="outFunc()" class="myTooltip sm-btn"><img style="float: right; margin: 0px 0px 15px 15px;" src="icon/icon4.png"/></span></button>
+       <p id='p1'>${quotes[index]}</p>
        <img src="icon/icon.png">
        </div>`;
        div.innerHTML=quote;
