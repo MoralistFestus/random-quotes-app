@@ -13,11 +13,12 @@ let quotes=[
     function displayQuote(){
       let index=Math.floor(Math.random()*quotes.length);
      //display the quote of that index and trigger action with event listener
+
         let div=document.querySelector('#quote-body');
         let quote=`<div id="quote"><div class="card">
         <div class="quote-text">Quote</div>
-        <div class="quote-copy"><img src="./icon/clipboard.png" alt="Clipboard" id="clip"></div>
-        <p>${quotes[index]}</p>
+        <div class="quote-copy" onclick="copyToClipboard('p1')"  onmouseout="outFunc()"><img src="./icon/clipboard.png" alt="Clipboard" id="clip"></div>
+        <p id="p1">${quotes[index]}</p>
        </div></div>`;
        div.innerHTML=quote;
      }

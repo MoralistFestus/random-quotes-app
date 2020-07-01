@@ -171,6 +171,27 @@ div.contributors div.contributors-img img
  border: .2rem solid #6293aa;
 }
 
+a.foot
+{
+ font-size: 1.5rem;
+ font-weight: 900;
+ font-family: inherit;
+ text-transform: uppercase;
+ color: #6293aa;
+ text-decoration: overline;
+ transition: all .3s;
+}
+
+a.foot:hover
+{
+ font-size: 1.2rem;
+ font-weight: 900;
+ font-family: inherit;
+ text-transform: uppercase;
+ color: #fff;
+ text-decoration: none;
+ background-color: #6293aa;
+}
 
 /* Loading Animation */
 .loading

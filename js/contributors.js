@@ -47,4 +47,14 @@ xhr.onload = function() {
     }
 };
 
+xhr.onerror = function() {
+    // Error
+    let error = document.createElement('div');
+    let errorMsg = `<a class="foot" href="https://github.com/MoralistFestus">Moralist Festus</a>`;
+    let contr = document.querySelector('div.contributors');
+
+    error.innerHTML = errorMsg;
+    contr.insertBefore(error, contr.children[1]);
+}
+
 xhr.send();
