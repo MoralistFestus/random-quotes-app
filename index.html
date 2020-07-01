@@ -23,4 +23,29 @@
     <span style="color:white;font-size:5px;font-decoration:none;float:right">Made with ♥ by <a style="color:orange;text-decoration:none"href="https://github.com/MoralistFestus">Moralist Festus</a></span>
 </body>
 <script src="js/script.js"></script>
+<script type="text/javascript">
+   
+   function copyToClipboard(elementId) {
+   
+   // Create a "hidden" input
+   var aux = document.createElement("input");
+   
+   // Assign it the value of the specified element
+   aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+   
+   // Append it to the body
+   document.body.appendChild(aux);
+   
+   // Highlight its content
+   aux.select();
+   
+   // Copy the highlighted text
+   document.execCommand("copy");
+   
+   // Remove it from the body
+   document.body.removeChild(aux);
+   alert ("copied");
+   }
+
+</script>
 </html>
