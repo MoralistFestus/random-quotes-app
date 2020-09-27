@@ -22,7 +22,7 @@
         <header>
             <div class="subcon">
               <h3>Random Quotes</h3>
-              <p>Lets Generate Some Quotes</p>
+              <p id="quotes"></p>
     
               <!--button to display random quote-->
               <button class="btn">Generate</button>
@@ -59,6 +59,9 @@
 <!-- Contributors JS -->
 <script src="./js/contributors.js"></script>
 
+<!-- Typed Library -->
+<script src="js/typed.js"></script>
+
 <script type="text/javascript">
    
    function copyToClipboard(elementId) {
@@ -83,5 +86,14 @@
    alert ("copied");
 }
 
+var typed5 = new Typed('#quotes', {
+    strings: ['^3000 Lets Generate Some Quotes', 'Click the Generate Button to Start', 'Stay Inspired and be Motivated'],
+    typeSpeed: 90,
+    backSpeed: 210,
+    shuffle: false,
+    smartBackspace: false,
+    loop: true
+  });
+    
 </script>
 </html>
