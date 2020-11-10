@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Icon -->
+    <link rel="stylesheet" href="./css/contributors.css">
     <link rel="shortcut icon" href="icon/quotes.png">
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Title -->
     <title>Random Quotes</title>
 </head>
@@ -23,7 +24,18 @@
             <div class="subcon">
               <h3>Random Quotes</h3>
               <p id="quotes"></p>
-    
+                <center>
+                    <h4 style="font-size:large; color: ;">
+                        Quote of the day
+                    </h4>
+                    <br>
+                </center>
+                <center>
+                    <div class="randomOne" >
+                        <h5></h5>
+                        <h6 class='api' ></h6>
+                    </div>
+                </center>
               <!--button to display random quote-->
               <button class="btn">Generate</button>
               
@@ -47,7 +59,9 @@
 
             <div class="contributors">
                 <div class="contributors-text">Project Contributors</div>
-                <div class="contributors-img"></div>
+                <div class="contributors-img">
+                    <img src="https://avatars1.githubusercontent.com/u/54102389?s=460&u=bb6d04f6a19d3cf8c0d6761dfaac78dfaff29a4a&v=4" alt="">
+                </div>
             </div>
         </footer>
 
@@ -83,7 +97,7 @@
    
    // Remove it from the body
    document.body.removeChild(aux);
-   alert ("copied");
+    swal('copied','your quote has been copied to clipboard','success')
 }
 
 var typed5 = new Typed('#quotes', {
