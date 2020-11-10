@@ -58,3 +58,21 @@ xhr.onerror = function() {
 }
 
 xhr.send();
+
+
+//get random qoutes 
+(()=>{
+    const endpoint='http://quotes.stormconsultancy.co.uk/random.json';
+    //now fetch the endpoint 
+    fetch(endpoint )
+    .then( res => res.json())
+    .then( result => {
+        const user=document.querySelector('h5')
+        const auth=document.querySelector('.api')
+        user.innerHTML=`${result.quote} ` 
+        auth.innerHTML=`Author:  ${result.author}`
+        
+    })
+    
+})();
+

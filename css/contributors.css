@@ -1,0 +1,27 @@
+:root{
+    --font:15px;
+    --bg:white;
+    --brd:rgb(128, 19, 201);
+    --col:#6293aa;
+}
+
+.randomOne {
+    width: 60%;
+    background-color:var(--bg);
+    border-radius: 7px;
+   
+    height: 80px;
+    
+
+}
+
+.randomOne > h5 {
+    font-size: 15px;
+    color:var(--col);
+    padding: 10px;
+}
+
+.randomOne > h6 {
+    font-size: 12px;
+    color: var(--col);
+}
